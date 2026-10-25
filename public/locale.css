@@ -1,0 +1,25 @@
+/* Compact language controls live inside the existing header. */
+.language-switch{display:flex;align-items:center;gap:2px;flex-shrink:0;color:var(--mauve);font:11px/1 Arial,sans-serif;letter-spacing:.6px}
+.language-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:30px;min-height:44px;border-bottom:1px solid transparent}
+.language-switch a[aria-current=true]{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+.language-switch>span{opacity:.5}
+.service-translation{margin-top:5px;border-top:1px solid var(--line);font:14px/1.65 Arial,sans-serif;color:var(--body)}
+.service-translation summary{cursor:pointer;min-height:44px;padding:11px 0;color:#75425d}
+.service-translation strong{color:var(--ink);font-weight:500}
+.service-translation li+li{margin-top:15px}
+.service-translation ul{padding-left:20px}
+.service-translation a{text-decoration:underline;text-underline-offset:3px}
+.service-translation .original-contact{font-size:12px}
+@media(min-width:781px){.header{gap:18px}.header nav{gap:18px}}
+@media(min-width:781px) and (max-width:1120px){.header{padding-left:4%;padding-right:4%;gap:12px}.header nav{gap:12px}.header>.pill{padding:13px 17px}}
+@media(max-width:900px){.header>.pill{display:none}.language-switch{margin-left:auto}.header nav{margin-left:auto}}
+@media(max-width:500px){.language-switch{font-size:10px}.language-switch a{min-width:28px}.header{gap:7px}}
+@media(max-width:360px){.header .brand{font-size:24px;gap:6px}.header .brand-mark{width:36px;height:36px}.header .menu{padding:6px;font-size:20px}}
+@media(min-width:781px){html[lang=en] .hero .lead{max-width:min(420px,36vw)}}
+/* The approved QR is rendered from its exact module grid; no bank screenshot or labels. */
+.project-support-bank-area{display:flex;flex-direction:column;align-items:flex-start;gap:16px;min-width:0;max-width:100%}
+.project-support-qr{margin:0;text-align:center}
+.project-support-qr>a{display:block;width:164px;max-width:100%;background:#fff;border-radius:6px;overflow:hidden}
+.project-support-qr img{display:block;width:164px;height:auto;max-width:100%;aspect-ratio:1}
+.project-support-qr figcaption{padding-top:8px;font:11px/1.5 Arial,sans-serif;color:#746169}
+.project-support-qr a:focus-visible{outline:3px solid var(--mauve);outline-offset:5px}
